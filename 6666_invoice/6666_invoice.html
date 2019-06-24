@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+<style>
+    .bg-success{
+        background: linear-gradient(45deg,black,green,black);
+        color: white;
+    }
+</style>
+</head>
+<body>
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="imgg/Capture.PNG" class="img-thumbnail img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold mt-2 text-center bg-success"><i>Suri Dsr</i></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------suridsr------text area----->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <form>
+                  <div class="form-group ">
+                      <input type="text" placeholder="text enter" class="form-control bg-light">
+                  </div>
+                  <div class="form-group mt-2">
+                      <input type="text" placeholder="text enter" class="form-control bg-light">
+                  </div>
+                  <div class="form-group mt-2">
+                      <input type="text" placeholder="text enter" class="form-control bg-light">
+                  </div>
+                  <div class="form-group mt-2">
+                      <input type="text" placeholder="text enter" class="form-control bg-light">
+                  </div>
+                  <div class="form-group mt-2">
+                      <input type="text" placeholder="text enter" class="form-control bg-light">
+                  </div>
+              </form>
+            </div>
+
+                <div class="col-md-4">
+
+                </div>
+
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group ">
+                        <input type="text" placeholder="text enter" class="form-control bg-light">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="text" placeholder="text enter" class="form-control bg-light">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="text" placeholder="text enter" class="form-control bg-light">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="text" placeholder="text enter" class="form-control bg-light">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="text" placeholder="text enter" class="form-control bg-light">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------table header---->
+<section class="p-3">
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <table class="table text-center table-bordered">
+                    <thead class="bg-success ">
+                    <tr>
+                        <th>#</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Cost (&#8377;)</th>
+                        <th>Total (&#8377;) </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                       <td>
+                           <button>
+                               <i class="fa fa-window-close fa-2x bg-danger"></i>
+                           </button>
+                       </td>
+                        <td>
+                           <div class="form-group">
+                               <input type="text" class="form-control bg-light">
+                           </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light">
+                            </div>
+                        </td>
+                        <td>
+                            <span>{{ item.qty * item.cost | currency : '&#8377;'}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>
+                                <i class="fa fa-plus-circle fa-2x bg-primary"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-light ml-auto">
+                        <td></td><td></td><td></td>
+                        <td>Sub total</td>
+                        <td>
+                            <span>{{ item.qty * item.cost | currency : '&#8377;'}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td>
+                        <td class="form-inline">Gst(%)
+                            <input type="text" class="form-control ml-2">
+                        </td>
+                        <td>
+                            <span>{{ item.qty * item.cost | currency : '&#8377;'}}</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-light ml-auto">
+                        <td></td><td></td><td></td>
+                        <td>grand total</td>
+                        <td>
+                            <span>{{ item.qty * item.cost | currency : '&#8377;'}}</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-3">
+    <div class="row">
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-4">
+            <img src="imgg/webbanner_suri_1_0.jpg" class="img-fluid img-thumbnail">
+            <p class="font-weight-bold align-items-center">Authorized Person</p>
+        </div>
+    </div>
+</section>
+
+<section class="p-3">
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary">Off edit mode</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+</body>
+</html>

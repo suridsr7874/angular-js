@@ -1,0 +1,82 @@
+
+<html ng-app="appmodule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+<style>
+    .bg-warning{
+        background: linear-gradient(45deg,black,teal);
+    }
+    .btn-warning{
+        background: linear-gradient(45deg,black,teal);
+    }
+</style>
+
+</head>
+<body>
+<section class="p-3">
+    <div class="container" ng-controller="suri">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-primary text-center bg-warning">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="username" class="form-control" ng-model="username" >
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="email" class="form-control" ng-model="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="password" class="form-control"ng-model="password">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input ng-model="check" type="checkbox" class="form-check-input">
+                                <span class="form-check-label">Remember Password</span>
+                            </div>
+                        </form>
+                        <button class="btn btn-warning btn-block">Logout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h2>Angular ng-model</h2>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-muted">User name : <span class="text-primary">{{username}}</span></h4>
+                        <hr>
+                        <h4 class="text-muted">Email : <span class="text-primary">{{email}}</span></h4>
+                        <hr>
+                        <h4 class="text-muted">Password : <span class="text-primary">{{password}}</span></h4>
+                        <hr>
+                        <h4 class="text-muted">CheckBox : <span class="text-primary">{{check}}</span></h4>
+                        <hr>
+                        <a class="btn btn-teal btn-block btn-lg">Validate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<script src="../angular-1.7.8/angular.js"></script>
+<script src="3333_login.js"></script>
+
+</body>
+</html>
